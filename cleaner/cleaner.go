@@ -71,19 +71,9 @@ func dirWalk(dirPath string) {
 		if len(files) < 2 {
 			continue
 		}
-		//保留名称最短的文件，其它重复文件删除
-		min := len(files[0].Name())
+		//Keep the first file and delete all other files
 		for i := 1; i < len(files); i++ {
-			lname := len(files[i].Name())
-			if lname < min {
-				min = lname
-			}
-		}
-		for _, file := range files {
-			if len(file.Name()) == min {
-				log.WithField("filename", file.Name()).Info("保留")
-				continue
-			}
+			file := files[i]
 			backupDir := "./" + BACKUP_DIR_NAME + "/" + dirPath[2:]
 			createDirIfNoExist(backupDir)
 			err = os.Rename(dirPath+file.Name(), backupDir+file.Name())
