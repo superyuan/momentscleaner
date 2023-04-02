@@ -11,7 +11,8 @@ on:
 
 jobs:
 
-  build:
+  build-on-windows-latest:
+    name: Run the project for latest windows
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
