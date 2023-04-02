@@ -2,7 +2,7 @@
 群晖Moments重复文件清理工具<br>
 扫描当前目录及所有子目录下的重复文件(根据文件md5值)，将同文件目录下的重复文件删除<br>
 
-[点此下载](https://github.com/0990/momentscleaner/releases)
+[点此下载](https://github.com/superyuan/momentscleaner/releases)
 
 ## 工具来由
  群晖moments经常在同个文件夹下出现好多重复文件,比如xxx_1.jpg,xxx_2.jpg,占用空间<br>
