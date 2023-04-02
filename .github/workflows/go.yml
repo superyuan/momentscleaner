@@ -29,7 +29,7 @@ jobs:
       run: go test -v ./...
     
     - name: version
-      run: echo "::set-output name=version::$(./momentscleaner/momentscleaner --version)"
+      run: echo "::set-output name=version::$(../momentscleaner/momentscleaner --version)"
       id: version
     
     - name: release
