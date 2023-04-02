@@ -1,4 +1,4 @@
-module github.com/0990/momentscleaner
+module github.com/superyuan/momentscleaner
 
 go 1.13
 
