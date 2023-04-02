@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/0990/momentscleaner/cleaner"
-	"github.com/0990/momentscleaner/logconfig"
+	"github.com/superyuan/momentscleaner/cleaner"
+	"github.com/superyuan/momentscleaner/logconfig"
 	_ "net/http/pprof"
 )
 
